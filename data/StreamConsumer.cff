@@ -8,9 +8,10 @@ module StreamConsumer = I2OStreamConsumer {
 	"keep *",
 	"drop *_FedChannelDigis_*_*"
     }
-    
-}
 
+}    
+  
+service = DQMShipMonitoring { untracked uint32 period = 10 }
 //service = LockService { untracked vstring labels = { "StreamConsumer" } }
 
 endpath streamconsumer = { StreamConsumer }
