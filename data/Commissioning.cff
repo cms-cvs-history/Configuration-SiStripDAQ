@@ -4,8 +4,8 @@ replace MessageLogger.log4cplus = { untracked string threshold = "DEBUG" }
 include "DQM/SiStripCommon/data/DaqMonitorROOTBackEnd.cfi"
 
 include "OnlineDB/SiStripESSources/data/FedCablingFromConfigDb.cff"
-replace FedCablingFromConfigDb.ConfDb = ""
-replace FedCablingFromConfigDb.Partition = ""
+replace SiStripConfigDb.ConfDb = ""
+replace SiStripConfigDb.Partition = ""
 
 include "IORawData/SiStripInputSources/data/DaqSource.cfi"
 
